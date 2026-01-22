@@ -1,0 +1,2 @@
+dictionary = {'Arun': 'English', 'Subham': 'Spanish', 'Ashish': 'Japanese', 'Ashish': 'Chinese', 'Harry': 'Portugese'}
+print(dictionary) # dictionary can't contains duplicate keys as it overwrite the value of previous key
