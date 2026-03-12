@@ -2,14 +2,16 @@ class Employee:
     a = 1
 
     def __init__(self):
-        print('Constructor of Employee')
+        print('Constructor of Employee', end="")
+        print('\n')
 
 class Programmer(Employee):
     b = 2
     # inherited a = 1 property
 
     def __init__(self):
-        print('Constructor of Programmer')
+        print('Constructor of Programmer', end="")
+        print('\n')
 
 class Manager(Programmer):
     c = 3
@@ -17,7 +19,8 @@ class Manager(Programmer):
 
     def __init__(self):
         super().__init__() # calls __init__() from super class that is Programmer
-        print('Constructor of Manager')
+        print('Constructor of Manager', end="")
+        print('\n')
 
 x = Employee()
 print(f'Property that belongs only to Employee class {x.a}')
